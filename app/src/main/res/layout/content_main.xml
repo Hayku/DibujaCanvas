@@ -37,7 +37,9 @@
             android:id="@+id/lbProgress"
             android:layout_weight="0.03"
             android:textSize="25sp"
-            tools:gravity="center" />
+            tools:gravity="center"
+            android:editable="false"
+            android:gravity="center" />
 
         <LinearLayout
             android:orientation="horizontal"

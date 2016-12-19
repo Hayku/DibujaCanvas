@@ -94,6 +94,8 @@ public class MainActivity extends AppCompatActivity
             opc = 1;
         } else if (id == R.id.nav_rectangulos) {
             opc = 2;
+        } else if (id == R.id.nav_limpia) {
+            opc = 3;
         } else if (id == R.id.nav_ocultar) {
             oculta();
         } else if (id == R.id.nav_pulsar) {
@@ -167,7 +169,6 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    //--------------------------------------------------------------------------------
     public class AsyncTaskCargaDatos extends AsyncTask<Void, Integer, Boolean> {
 
         @Override
@@ -228,8 +229,8 @@ public class MainActivity extends AppCompatActivity
             Paint pincel1 = new Paint();
 
             limpiar(canvas, pincel1, ancho, alto);
-
-            pincel1.setARGB(255, 255, 0, 0);
+            //59-131-189
+            pincel1.setARGB(255, 0,255, 0);
             if (sw.isChecked())
                 pincel1.setStyle(Paint.Style.FILL);
             else
@@ -241,6 +242,9 @@ public class MainActivity extends AppCompatActivity
                     break;
                 case 2:
                     dibujaRectangulo(canvas, pincel1, ancho, alto);
+                    break;
+                case 3:
+                    limpiar(canvas, pincel1, ancho, alto);
                     break;
             }
         }

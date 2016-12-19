@@ -8,6 +8,9 @@
         <item
             android:id="@+id/nav_rectangulos"
             android:title="Dibujar Rectangulos" />
+        <item
+            android:id="@+id/nav_limpia"
+            android:title="Limpiar" />
 
     </group>
 
